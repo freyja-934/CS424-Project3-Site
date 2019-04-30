@@ -61,18 +61,27 @@
 <div class="row" style="padding: 20px;">
       <div id="Solution" class="w3-container city" >
       <h2>Solution</h2>
-      <img style="width: 60%; height: 60%!important;" src=""></img><br><br>
-       <h2>YouTube Video</p></h2>
+     <a href="http://shiny.evl.uic.edu:3838/p3g2/g2_Project_3/"> <img style="width: 60%; height: 60%!important;" src="img/intro.png"></img></a><br><br>
+     <p>The following link you take you the server page of Project 3, the Air that I Breathe. <a style="color: cornflowerblue" href="http://shiny.evl.uic.edu:3838/p3g2/g2_Project_3/">http://shiny.evl.uic.edu:3838/p3g2/g2_Project_3/</a></p>  
+     <h2>YouTube Video</p></h2>
       <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <br><br>
       <h2>How to Use This Application</h2>
       <p>
+        From here you will have a tab on the side. Units will allow the user to change the units of measurement from metric to Imperial and vice versa. The two drop-down menus, Node 1 and  Node 2, which will allow the user to compare them. The Time Frame will also allow the user to see the data for the current time, last 24 hours, and last 7 days for those nodes. Opening up the dashboard will allow the user to choose 3 different tabs, (Node Map, Heat Map, Compare Nodes) The last 3 tabs (Choose AOT Data, Choose Dark Sky Data, Choose OpenAQ Data) will allow the user to pick which data they want to display for the certain data set.  
+
       </p>
     </div>
 
     <div id="Data" class="w3-container city" style="display:none">
       <h2>Data</h2>
       <p>
+            This project uses 3 different sets of data, 
+            Array of Things, DarkSky, and OpenAQ
+            <br><br>
+            You can find the data here for all three classifications of data. 
+            Open AQ: <a style="color: cornflowerblue" href="https://github.com/ropensci/ropenaq">https://github.com/ropensci/ropenaq</a>
+            
       </p>
       
     </div>
@@ -82,7 +91,43 @@
       <p>You can download the source code here: <a style="color: cornflowerblue" href="" download>download</a></p>   
       <br>
       <h2>Getting Started</h2>
-         <p></p>
+         <p>Instructions of how to install RStudio and R.
+            The following links will take the user to the websites where the user will need to download and install R and RStudio<br>  
+            <br>
+            R - <a style="color: cornflowerblue" href="https://www.r-project.org/">https://www.r-project.org/</a><br>
+            R studio - <a style="color: cornflowerblue" href="https://www.rstudio.com/">https://www.rstudio.com/</a><br><br>
+            Find the operating system that best fits you and install the latest version.  <br>
+            Most R shiny code requires packages to run. In Order to install packages simply go to the command line and enter:
+            <br><br> <code>install.packages(“(The Package you want to install)”)</code> <br><br>
+            The packages you will need to install are the following; 
+            <br>
+            <ul>
+               <li>Shiny DTl</li>
+               <li>AotClient</li>
+               <li>darksky</li>
+               <li>Ropenaq</li>
+               <li>lubridate</li>
+               <li>Tidyverse</li>
+               <li>dplyr</li>
+               <li>shinydashboard</li>
+               <li>leaflet</li>
+               <li>qdapTools</li>
+               <li>data.table</li>
+               <li>jsonlite</li>
+               <li>leaflet.extras</li>
+               <li>magrittr</li>
+            </ul>
+            
+            <br>
+            After this the user Rstudio should be up to date in order to run the project’s code.  
+            <br>
+            In order to see this shiny, the user would need to frist download all the files that are above. The would then need to run the Project3.Rproj in order to run it. It should open in R studio, If you do not have RStudio please go to the top of the page and follow the instructions of how to install and run Rstudio. 
+            For this particular RShiny code will require the user to get an API key in order to run. 
+            <br>To do this go to the following websites to get the API key for DarkSky,  <a style="color: cornflowerblue" href="https://darksky.net/dev">https://darksky.net/dev.</a> Once you get your key, place it in the variable: 
+             <code>Sys.setenv(DARKSKY_API_KEY = 'YOUR KEY HERE’)</code><br>
+            After all this just hit the run app button on the top toolbar to run the program. 
+            <br>
+            You can also find out more about building applications with Shiny here:    <a style="color: cornflowerblue" href="http://shiny.rstudio.com/">http://shiny.rstudio.com/</a></p>
 
     </div>
     <div id="Interesting" class="w3-container city" style="display:none">
